@@ -8,7 +8,7 @@ Release:	1
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Digest::MD5)
