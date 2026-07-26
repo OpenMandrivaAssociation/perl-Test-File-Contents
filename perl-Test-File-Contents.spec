@@ -1,15 +1,13 @@
 %define upstream_name    Test-File-Contents
-%define upstream_version 0.20
-
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	1
+Version:	0.20
+Release:	2
 
 Summary:	%{upstream_name} perl module
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/%{upstream_name}
+Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Spec)
@@ -24,7 +22,7 @@ BuildArch:	noarch
 %{upstream_name} perl module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL installdirs=vendor
